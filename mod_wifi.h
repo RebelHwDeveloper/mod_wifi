@@ -1,21 +1,14 @@
-/*! \file 
- * 
- * Devo per poter configurare il sistema appoggiarmi sulla libreria libuci, la quale ogni votla che io devo cercare o
- * reperire qualche informazione è necessario che io:
- *  1. Crei un context libuci
- *  2. Crei una struct uci_ptr la quale contiene il risultato
- *  3. Creare ovviamente il comando da ricercare
- *  4. Lanciare il comando di lookup
- *  
+/*! \file
+ *
  */
-
 #ifndef MOD_WIFI_LIBRARY_H
 #define MOD_WIFI_LIBRARY_H
 #include <stdlib.h>
 #include <ctype.h>
 #include <stdio.h>
 #include <stdbool.h>
-
+#include "wapi.h"
+#include "wireless.h"
 #include "data_pool.h"
 
 typedef struct mod_wifi_type * Mod_WiFi;
