@@ -1,0 +1,93 @@
+\hypertarget{library_8h}{}\section{library.\+h File Reference}
+\label{library_8h}\index{library.\+h@{library.\+h}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}wapi/include/wapi.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}data\+\_\+pool.\+h\char`\"{}}\newline
+Include dependency graph for library.\+h\+:
+% FIG 0
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{library_8h_aaae837160bb0503a8b9e698d3bb9fba6}\label{library_8h_aaae837160bb0503a8b9e698d3bb9fba6}} 
+typedef struct \hyperlink{structmod__wifi__type}{mod\+\_\+wifi\+\_\+type} $\ast$ {\bfseries Mod\+\_\+\+Wi\+Fi}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{library_8h_a7ff03a836b0074dce5a1e3435be39b6a}\label{library_8h_a7ff03a836b0074dce5a1e3435be39b6a}} 
+P\+U\+B\+L\+IC \hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi} {\bfseries wifi\+\_\+destroy} (\hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi})
+\item 
+P\+U\+B\+L\+IC \hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi} \hyperlink{library_8h_a7287f98a034a1b0bc0960906d7d145cd}{wifi\+\_\+create} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the wifi module of the Connect Kit system. \end{DoxyCompactList}\item 
+P\+R\+I\+V\+A\+TE bool \hyperlink{library_8h_a8db3b2d109c3b3ce7d3d8028645b5b1f}{wifi\+\_\+initialize} (\hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi} module)
+\begin{DoxyCompactList}\small\item\em Constructor for the wifi module of the Connect Kit system. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC bool \hyperlink{library_8h_abcebec026006c71b7af79ee7bdc31434}{wifi\+\_\+change\+\_\+ssid} (\hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi} module, unsigned char ssid)
+\begin{DoxyCompactList}\small\item\em Constructor for the wifi module of the Connect Kit system. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC bool \hyperlink{library_8h_a94883b0df7fcc631439c4e4cc05ef2fc}{wifi\+\_\+change\+\_\+password} (\hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi} module, unsigned char password)
+\begin{DoxyCompactList}\small\item\em Setter of the. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{library_8h_a94883b0df7fcc631439c4e4cc05ef2fc}\label{library_8h_a94883b0df7fcc631439c4e4cc05ef2fc}} 
+\index{library.\+h@{library.\+h}!wifi\+\_\+change\+\_\+password@{wifi\+\_\+change\+\_\+password}}
+\index{wifi\+\_\+change\+\_\+password@{wifi\+\_\+change\+\_\+password}!library.\+h@{library.\+h}}
+\subsubsection{\texorpdfstring{wifi\+\_\+change\+\_\+password()}{wifi\_change\_password()}}
+{\footnotesize\ttfamily P\+U\+B\+L\+IC bool wifi\+\_\+change\+\_\+password (\begin{DoxyParamCaption}\item[{\hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi}}]{module,  }\item[{unsigned char}]{password }\end{DoxyParamCaption})}
+
+
+
+Setter of the. 
+
+This will configure or reset the wifi module A\+DT
+
+\begin{DoxyReturn}{Returns}
+Mod\+\_\+\+Wi\+Fi A\+DT ready to use 
+\end{DoxyReturn}
+\mbox{\Hypertarget{library_8h_abcebec026006c71b7af79ee7bdc31434}\label{library_8h_abcebec026006c71b7af79ee7bdc31434}} 
+\index{library.\+h@{library.\+h}!wifi\+\_\+change\+\_\+ssid@{wifi\+\_\+change\+\_\+ssid}}
+\index{wifi\+\_\+change\+\_\+ssid@{wifi\+\_\+change\+\_\+ssid}!library.\+h@{library.\+h}}
+\subsubsection{\texorpdfstring{wifi\+\_\+change\+\_\+ssid()}{wifi\_change\_ssid()}}
+{\footnotesize\ttfamily P\+U\+B\+L\+IC bool wifi\+\_\+change\+\_\+ssid (\begin{DoxyParamCaption}\item[{\hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi}}]{module,  }\item[{unsigned char}]{ssid }\end{DoxyParamCaption})}
+
+
+
+Constructor for the wifi module of the Connect Kit system. 
+
+This will configure or reset the wifi module A\+DT, will load the configuration for the wifi module
+
+\begin{DoxyReturn}{Returns}
+Mod\+\_\+\+Wi\+Fi A\+DT ready to use 
+\end{DoxyReturn}
+\mbox{\Hypertarget{library_8h_a7287f98a034a1b0bc0960906d7d145cd}\label{library_8h_a7287f98a034a1b0bc0960906d7d145cd}} 
+\index{library.\+h@{library.\+h}!wifi\+\_\+create@{wifi\+\_\+create}}
+\index{wifi\+\_\+create@{wifi\+\_\+create}!library.\+h@{library.\+h}}
+\subsubsection{\texorpdfstring{wifi\+\_\+create()}{wifi\_create()}}
+{\footnotesize\ttfamily P\+U\+B\+L\+IC \hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi} wifi\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for the wifi module of the Connect Kit system. 
+
+This will destroy the \char`\"{}object\char`\"{} provided with memory releasing and context destroying.
+
+\begin{DoxyReturn}{Returns}
+Free the Mod\+\_\+\+Wi\+Fi created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{library_8h_a8db3b2d109c3b3ce7d3d8028645b5b1f}\label{library_8h_a8db3b2d109c3b3ce7d3d8028645b5b1f}} 
+\index{library.\+h@{library.\+h}!wifi\+\_\+initialize@{wifi\+\_\+initialize}}
+\index{wifi\+\_\+initialize@{wifi\+\_\+initialize}!library.\+h@{library.\+h}}
+\subsubsection{\texorpdfstring{wifi\+\_\+initialize()}{wifi\_initialize()}}
+{\footnotesize\ttfamily P\+R\+I\+V\+A\+TE bool wifi\+\_\+initialize (\begin{DoxyParamCaption}\item[{\hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi}}]{module }\end{DoxyParamCaption})}
+
+
+
+Constructor for the wifi module of the Connect Kit system. 
+
+This will create the wifi module A\+DT, will create a context to use within the libuci library
+
+\begin{DoxyReturn}{Returns}
+Mod\+\_\+\+Wi\+Fi A\+DT not initialized 
+\end{DoxyReturn}

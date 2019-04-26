@@ -1,0 +1,145 @@
+\hypertarget{mod__wifi_8h}{}\section{mod\+\_\+wifi.\+h File Reference}
+\label{mod__wifi_8h}\index{mod\+\_\+wifi.\+h@{mod\+\_\+wifi.\+h}}
+
+
+Principal interface file.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../wapi/wapi.\+h\char`\"{}}\newline
+Include dependency graph for mod\+\_\+wifi.\+h\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mod__wifi_8h_ad17d551e31d1828c68acf40684849b7e}\label{mod__wifi_8h_ad17d551e31d1828c68acf40684849b7e}} 
+\#define {\bfseries P\+U\+B\+L\+IC}~/$\ast$ none $\ast$/
+\item 
+\mbox{\Hypertarget{mod__wifi_8h_a5e151c615eda34903514212f05a5ccf8}\label{mod__wifi_8h_a5e151c615eda34903514212f05a5ccf8}} 
+\#define {\bfseries P\+R\+I\+V\+A\+TE}~static
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mod__wifi_8h_aaae837160bb0503a8b9e698d3bb9fba6}\label{mod__wifi_8h_aaae837160bb0503a8b9e698d3bb9fba6}} 
+typedef struct \hyperlink{structmod__wifi__type}{mod\+\_\+wifi\+\_\+type} $\ast$ {\bfseries Mod\+\_\+\+Wi\+Fi}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mod__wifi_8h_a7ff03a836b0074dce5a1e3435be39b6a}\label{mod__wifi_8h_a7ff03a836b0074dce5a1e3435be39b6a}} 
+P\+U\+B\+L\+IC \hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi} {\bfseries wifi\+\_\+destroy} (\hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi})
+\item 
+P\+U\+B\+L\+IC \hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi} \hyperlink{mod__wifi_8h_aa82f775c5ca00013e390d4af61bcd7a6}{wifi\+\_\+create} (char $\ast$ifname)
+\begin{DoxyCompactList}\small\item\em Constructor for the wifi module of the Connect Kit system. \end{DoxyCompactList}\item 
+P\+R\+I\+V\+A\+TE bool \hyperlink{mod__wifi_8h_a8db3b2d109c3b3ce7d3d8028645b5b1f}{wifi\+\_\+initialize} (\hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi} module)
+\begin{DoxyCompactList}\small\item\em Constructor for the wifi module of the Connect Kit system This will create the wifi module A\+DT, it will allocate memory that will be used to hold info populated by the instantiation function {\ttfamily \hyperlink{mod__wifi_8h_a8db3b2d109c3b3ce7d3d8028645b5b1f}{wifi\+\_\+initialize()}}. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC bool \hyperlink{mod__wifi_8h_aa60c4d9e66a62ee0684eab34367646b7}{wifi\+\_\+change\+\_\+ssid} (\hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi} module, unsigned char $\ast$interface)
+\begin{DoxyCompactList}\small\item\em Constructor for the wifi module of the Connect Kit system. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC bool \hyperlink{mod__wifi_8h_a17170886ae7a00d9dba64a078f34b074}{wifi\+\_\+get\+\_\+ssid} (\hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi} module, unsigned char $\ast$ssid\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Setter of wifi. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC bool \hyperlink{mod__wifi_8h_a94883b0df7fcc631439c4e4cc05ef2fc}{wifi\+\_\+change\+\_\+password} (\hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi} module, unsigned char password)
+\begin{DoxyCompactList}\small\item\em Getter of wifi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Principal interface file. 
+
+Here you\textquotesingle{}ll find the declarations of all the structures and functions used, see main page for explanation in usage. This is the first of a set of specializations of various network interfaces, generic, ppp, slip... I\textquotesingle{}ll use it just with a reference, not with a full-\/fledged inheritance system. I\textquotesingle{}ll give a pointer to which the generic network interface can hook and use. This respects the coupling-\/cohesion pattern through information hiding. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{mod__wifi_8h_a94883b0df7fcc631439c4e4cc05ef2fc}\label{mod__wifi_8h_a94883b0df7fcc631439c4e4cc05ef2fc}} 
+\index{mod\+\_\+wifi.\+h@{mod\+\_\+wifi.\+h}!wifi\+\_\+change\+\_\+password@{wifi\+\_\+change\+\_\+password}}
+\index{wifi\+\_\+change\+\_\+password@{wifi\+\_\+change\+\_\+password}!mod\+\_\+wifi.\+h@{mod\+\_\+wifi.\+h}}
+\subsubsection{\texorpdfstring{wifi\+\_\+change\+\_\+password()}{wifi\_change\_password()}}
+{\footnotesize\ttfamily P\+U\+B\+L\+IC bool wifi\+\_\+change\+\_\+password (\begin{DoxyParamCaption}\item[{\hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi}}]{module,  }\item[{unsigned char}]{password }\end{DoxyParamCaption})}
+
+
+
+Getter of wifi. 
+
+This function gives in output the S\+S\+ID of the network, it was intended for a complete E\+S\+S\+ID so it should be connected to a distribution network to form an E\+SS. The returned value is not the S\+S\+I\+D! It\textquotesingle{}s the result operation success or failure, so if you get return false you should not trust the output of the function, beacuse an error may have silently slipped and you\textquotesingle{}re using stale values.
+
+\begin{DoxyReturn}{Returns}
+Success failure of operation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mod__wifi_8h_aa60c4d9e66a62ee0684eab34367646b7}\label{mod__wifi_8h_aa60c4d9e66a62ee0684eab34367646b7}} 
+\index{mod\+\_\+wifi.\+h@{mod\+\_\+wifi.\+h}!wifi\+\_\+change\+\_\+ssid@{wifi\+\_\+change\+\_\+ssid}}
+\index{wifi\+\_\+change\+\_\+ssid@{wifi\+\_\+change\+\_\+ssid}!mod\+\_\+wifi.\+h@{mod\+\_\+wifi.\+h}}
+\subsubsection{\texorpdfstring{wifi\+\_\+change\+\_\+ssid()}{wifi\_change\_ssid()}}
+{\footnotesize\ttfamily P\+U\+B\+L\+IC bool wifi\+\_\+change\+\_\+ssid (\begin{DoxyParamCaption}\item[{\hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi}}]{module,  }\item[{unsigned char $\ast$}]{interface }\end{DoxyParamCaption})}
+
+
+
+Constructor for the wifi module of the Connect Kit system. 
+
+This will configure or reset the wifi module A\+DT, will load the configuration for the wifi module from the
+
+\begin{DoxyReturn}{Returns}
+Mod\+\_\+\+Wi\+Fi A\+DT ready to use 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em interface} & interface to change S\+S\+ID . \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mod__wifi_8h_aa82f775c5ca00013e390d4af61bcd7a6}\label{mod__wifi_8h_aa82f775c5ca00013e390d4af61bcd7a6}} 
+\index{mod\+\_\+wifi.\+h@{mod\+\_\+wifi.\+h}!wifi\+\_\+create@{wifi\+\_\+create}}
+\index{wifi\+\_\+create@{wifi\+\_\+create}!mod\+\_\+wifi.\+h@{mod\+\_\+wifi.\+h}}
+\subsubsection{\texorpdfstring{wifi\+\_\+create()}{wifi\_create()}}
+{\footnotesize\ttfamily P\+U\+B\+L\+IC \hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi} wifi\+\_\+create (\begin{DoxyParamCaption}\item[{char $\ast$}]{ifname }\end{DoxyParamCaption})}
+
+
+
+Constructor for the wifi module of the Connect Kit system. 
+
+This will destroy the \char`\"{}object\char`\"{} provided with memory releasing and context destroying.
+
+\begin{DoxyReturn}{Returns}
+Free the Mod\+\_\+\+Wi\+Fi created 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ifname} & interface to change S\+S\+ID . \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mod__wifi_8h_a17170886ae7a00d9dba64a078f34b074}\label{mod__wifi_8h_a17170886ae7a00d9dba64a078f34b074}} 
+\index{mod\+\_\+wifi.\+h@{mod\+\_\+wifi.\+h}!wifi\+\_\+get\+\_\+ssid@{wifi\+\_\+get\+\_\+ssid}}
+\index{wifi\+\_\+get\+\_\+ssid@{wifi\+\_\+get\+\_\+ssid}!mod\+\_\+wifi.\+h@{mod\+\_\+wifi.\+h}}
+\subsubsection{\texorpdfstring{wifi\+\_\+get\+\_\+ssid()}{wifi\_get\_ssid()}}
+{\footnotesize\ttfamily P\+U\+B\+L\+IC bool wifi\+\_\+get\+\_\+ssid (\begin{DoxyParamCaption}\item[{\hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi}}]{module,  }\item[{unsigned char $\ast$}]{ssid\+\_\+out }\end{DoxyParamCaption})}
+
+
+
+Setter of wifi. 
+
+This will set (change) the S\+S\+ID of the wireless interface.
+
+\begin{DoxyReturn}{Returns}
+Success or failure of the operation 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em ssid\+\_\+out} & data output of function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mod__wifi_8h_a8db3b2d109c3b3ce7d3d8028645b5b1f}\label{mod__wifi_8h_a8db3b2d109c3b3ce7d3d8028645b5b1f}} 
+\index{mod\+\_\+wifi.\+h@{mod\+\_\+wifi.\+h}!wifi\+\_\+initialize@{wifi\+\_\+initialize}}
+\index{wifi\+\_\+initialize@{wifi\+\_\+initialize}!mod\+\_\+wifi.\+h@{mod\+\_\+wifi.\+h}}
+\subsubsection{\texorpdfstring{wifi\+\_\+initialize()}{wifi\_initialize()}}
+{\footnotesize\ttfamily P\+R\+I\+V\+A\+TE bool wifi\+\_\+initialize (\begin{DoxyParamCaption}\item[{\hyperlink{structmod__wifi__type}{Mod\+\_\+\+Wi\+Fi}}]{module }\end{DoxyParamCaption})}
+
+
+
+Constructor for the wifi module of the Connect Kit system This will create the wifi module A\+DT, it will allocate memory that will be used to hold info populated by the instantiation function {\ttfamily \hyperlink{mod__wifi_8h_a8db3b2d109c3b3ce7d3d8028645b5b1f}{wifi\+\_\+initialize()}}. 
+
+\begin{DoxyAttention}{Attention}
+It does not do parameter checking, so use carefully
+\end{DoxyAttention}
+\begin{DoxyReturn}{Returns}
+Mod\+\_\+\+Wi\+Fi A\+DT not initialized 
+\end{DoxyReturn}

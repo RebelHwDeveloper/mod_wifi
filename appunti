@@ -1,0 +1,7 @@
+In questo file annoto appunti:
+
+La struttura dati ADT wifi verrà usata in composizione o aggregazione con l'ADT che rappresenta l'interfaccia di rete
+perchè hod eciso di sparare il tutto in maniera simile alla pila OSI, cioè implementare il data hiding in base
+sistemistica più che in termini di responsabilità. Questo vuol dire che sitroveranno info che concettualmente possono
+risultare simili ( e quindi forse ridondanti e duplicate) ma nel protocollo vengono usate così perciò io suddivido il
+mio programma in questo modo.

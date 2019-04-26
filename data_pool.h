@@ -4,12 +4,6 @@
 
 #ifndef MOD_WIFI_DATA_POOL_H
 #define MOD_WIFI_DATA_POOL_H
-#include "wireless.h"
-#include "string.h"
-
-#define PUBLIC /* none */
-#define PRIVATE static
-#define MAX_LEN_PW WAPI_ESSID_MAX_SIZE+1
 
 bool validate_str(const unsigned char *str, bool name) {
     if (!*str)
