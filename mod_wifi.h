@@ -15,7 +15,7 @@
 #include <stdbool.h>
 #include <string.h>
 
-#include "../wapi/wapi.h"
+#include "include/wapi.h"
 
 #define PUBLIC /* none */
 #define PRIVATE static
